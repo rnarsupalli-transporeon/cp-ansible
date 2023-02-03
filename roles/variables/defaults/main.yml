@@ -118,7 +118,7 @@ required_total_memory_mb_control_center: 7000
 required_total_memory_mb_kafka_connect_replicator: 3000
 
 ### Boolean to install commercially licensed confluent-server instead of community version: confluent-kafka
-confluent_server_enabled: true
+confluent_server_enabled: false
 
 ### Boolean to enable health checks on all components
 health_checks_enabled: true
@@ -284,6 +284,8 @@ skip_restarts: false
 
 ### Variable to set the user login shell for all custom user created per component by cp-ansible.
 user_login_shell: /sbin/nologin
+#Kafka variables
+kafka_dir: /var/lib/kafka
 
 # Zookeeper Variables
 

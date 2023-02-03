@@ -1,11 +1,11 @@
 ---
-- name: Confirm Hash Merging Enabled
-  assert:
-    that: lookup('config', 'DEFAULT_HASH_BEHAVIOUR') == 'merge'
-    fail_msg: "Hash Merging must be enabled in ansible.cfg"
-  tags:
-    - validate
-    - validate_hash_merge
+#- name: Confirm Hash Merging Enabled
+#  assert:
+#    that: lookup('config', 'DEFAULT_HASH_BEHAVIOUR') == 'merge'
+#    fail_msg: "Hash Merging must be enabled in ansible.cfg"
+#  tags:
+#    - validate
+#    - validate_hash_merge
 
 - name: Verify Ansible version
   assert:
